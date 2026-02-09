@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Layout 2 - Grid</title>
+
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body{
+      height: 100vh;
+    }
+
+    .container{
+      height: 100%;
+      display: grid;
+
+      grid-template-columns: 30% 70%;
+      grid-template-rows: 50% 50%;
+
+      grid-template-areas:
+        "esquerda topo"
+        "esquerda baixo";
+    }
+
+    .esquerda{
+      grid-area: esquerda;
+      background-color: rgb(255, 122, 228);
+    }
+
+    .topo{
+      grid-area: topo;
+      background-color: rgb(164, 40, 198);
+    }
+
+    .baixo{
+      grid-area: baixo;
+      background-color: rgb(125, 19, 255);
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="esquerda"></div>
+    <div class="topo"></div>
+    <div class="baixo"></div>
+  </div>
+</body>
+</html>

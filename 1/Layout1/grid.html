@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout 1 - Grid</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+        }
+        .container{
+            height: 100%;
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 30% 70%;
+
+            grid-template-areas: 
+            "topo topo"
+            "esquerda direita";
+        }
+
+        .topo{
+            grid-area: topo;
+            background-color: rgb(240, 187, 255);
+        }
+
+        .esquerda{
+            grid-area: esquerda;
+            background-color: rgb(186, 245, 253);
+        }
+
+        .direita{
+            grid-area: direita;
+            background-color: rgb(185, 185, 255);
+        }
+
+        .topo,.esquerda,.direita{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="topo">TOPO</div>
+            <div class="esquerda">ESQUERDA</div>
+            <div class="direita">DIREITA</div>
+    </div>
+</body>
+</html>

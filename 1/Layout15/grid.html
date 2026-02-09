@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Layout 15 - Grid</title>
+
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body{
+      height: 100vh;
+    }
+
+    .container{
+      height: 100%;
+      display: grid;
+
+      grid-template-columns: 33.33% 33.33% 33.33%;
+      grid-template-rows: 33.33% 33.33% 33.33%;
+
+      grid-template-areas:
+        "caixaum caixadois topo3"
+        "caixaum caixadois meio3"
+        "caixaum caixadois baixo3";
+    }
+
+    .caixaum { 
+        grid-area: caixaum; 
+        background: rgb(87, 255, 36); 
+    }
+
+    .caixadois { 
+        grid-area: caixadois; 
+        background: rgb(184, 255, 109); 
+    }
+
+    .topo3{ 
+        grid-area: topo3; 
+        background: rgb(195, 255, 202); 
+    }
+
+    .meio3{ 
+        grid-area: meio3; 
+        background: rgb(125, 198, 126); 
+    }
+
+    .baixo3{ 
+        grid-area: baixo3; 
+        background: rgb(50, 112, 63); 
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="caixaum"></div>
+    <div class="caixadois"></div>
+    <div class="topo3"></div>
+    <div class="meio3"></div>
+    <div class="baixo3"></div>
+  </div>
+</body>
+</html>

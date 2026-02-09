@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Layout 14 - Grid</title>
+
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body{
+      height: 100vh;
+    }
+
+    .container{
+      height: 100%;
+      display: grid;
+
+      grid-template-columns: 33.33% 33.33% 33.33%;
+      grid-template-rows: 33.33% 33.33% 33.33%;
+
+      grid-template-areas:
+        "topo1 topo2 topo3"
+        "caixadois caixadois caixadois"
+        "caixatres caixatres caixatres";
+    }
+
+    .topo1{ 
+        grid-area: topo1; 
+        background: rgb(178, 250, 255); 
+    }
+    .topo2{ 
+        grid-area: topo2; 
+        background: rgb(82, 202, 211);  
+    }
+    .topo3{ 
+        grid-area: topo3; 
+        background: rgb(57, 146, 152); 
+    }
+
+
+
+    .caixadois{ 
+        grid-area: caixadois; 
+        background: rgb(85, 160, 200); 
+    }
+
+
+    .caixatres{ 
+        grid-area: caixatres; 
+        background: rgb(31, 103, 144); 
+    }
+
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="topo1"></div>
+    <div class="topo2"></div>
+    <div class="topo3"></div>
+    <div class="caixadois"></div>
+    <div class="caixatres"></div>
+
+  </div>
+</body>
+</html>

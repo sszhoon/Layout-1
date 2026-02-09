@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout 18 - Grid</title>
+
+        
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+      
+        body{
+            display:grid;
+            grid-template-rows: 33.3% 68% ;
+        }
+        .container{
+            display:grid;
+            grid-template-rows: 33.3% 68% ;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .baixo{
+            
+            background-color: rgb(103, 196, 240);
+        }
+
+        .topo{
+            
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+
+        .primeiro{
+              
+            background-color: rgb(226, 43, 168);
+        }
+
+         .segundo{
+              
+            background-color: rgb(76, 58, 70);
+        }
+
+         .terceiro{
+              
+            background-color: rgb(104, 206, 153);
+        }
+    </style>
+</head>
+<body>
+     <div class="container">
+       <div class="topo">
+            <div class="primeiro"></div>
+            <div class="segundo"></div>
+            <div class="terceiro"></div>
+       </div>
+            <div class="baixo"></div>
+       </div>
+    </div>
+
+
+</body>
+</html>

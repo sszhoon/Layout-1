@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Layout 7 - Grid</title>
+
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body{
+      height: 100vh;
+    }
+
+    .container{
+      height: 100%;
+      display: grid;
+
+      grid-template-columns: 33.33% 33.33% 33.33%;
+      grid-template-rows: 33.33% 33.33% 33.33%;
+
+      grid-template-areas:
+        "topo1 topo2 topo3"
+        "meio1 meio2 meio3"
+        "baixo1 baixo2 baixo3";
+    }
+
+    .topo1{ 
+        grid-area: topo1; 
+        background: red; 
+    }
+    .topo2{ 
+        grid-area: topo2; 
+        background: orange;  
+    }
+    .topo3{ 
+        grid-area: topo3; 
+        background: yellow; 
+    }
+
+
+
+    .meio1{ 
+        grid-area: meio1; 
+        background: green; 
+    }
+    .meio2{ 
+        grid-area: meio2; 
+        background: cyan; 
+    }
+    .meio3{ 
+        grid-area: meio3; 
+        background: blue; 
+    }
+
+
+    .baixo1{ 
+        grid-area: baixo1; 
+        background: purple; 
+    }
+    .baixo2{ 
+        grid-area: baixo2; 
+        background: pink; 
+    }
+    .baixo3{ 
+        grid-area: baixo3; 
+        background: brown; 
+    }
+
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="topo1"></div>
+    <div class="topo2"></div>
+    <div class="topo3"></div>
+
+    <div class="meio1"></div>
+    <div class="meio2"></div>
+    <div class="meio3"></div>
+
+    <div class="baixo1"></div>
+    <div class="baixo2"></div>
+    <div class="baixo3"></div>
+  </div>
+</body>
+</html>

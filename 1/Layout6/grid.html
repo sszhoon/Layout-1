@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout 6 - Grid</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: grid;
+            height: 100vh;
+            width: 100vw;
+            
+        }
+
+        #container {
+            display: grid;
+            height: 100vh;
+            width: 100vw;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        #caixaUm {
+            background-color: blue;
+        }
+
+        #caixaDois {
+            background-color: yellow;
+        }
+
+        #caixaTres {
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="caixaUm"></div>
+        <div id="caixaDois"></div>
+        <div id="caixaTres"></div>
+    </div>
+
+</body>
+
+</html>

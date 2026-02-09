@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout 12 - Flex</title>
+
+        
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+         body{
+            display:flex;
+        }
+
+        .container{
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .topo{
+            height: 33.3%;
+            background-color: rgb(103, 196, 240);
+        }
+
+       
+
+        .meio{
+            height: 33.3%;
+            display: flex;
+        }
+
+        .primeiro{
+            width: 33.3%;
+            background-color: blueviolet;
+        }
+
+        .segundo{
+              width: 33.3%;
+            background-color: rgb(226, 43, 168);
+        }
+
+        .terceiro{
+              width: 33.3%;
+            background-color: rgb(56, 12, 42);
+        }
+
+          .baixo{
+            height: 33.3%;
+            background-color: rgb(52, 63, 68);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+       <div class="topo"></div>
+       <div class="meio">
+            <div class="primeiro"></div>
+            <div class="segundo"></div>
+            <div class="terceiro"></div>
+       </div>
+        <div class="baixo"></div>
+        
+    </div>
+
+
+</body>
+</html>

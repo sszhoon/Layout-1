@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout 16 - Flex</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            /* display: flex; */
+            height: 100vh;
+            width: 100vw;
+            /* flex-direction: row; */
+        }
+
+        #baixo {
+            display: flex;
+            height: 30%;
+            width: 100%;
+            justify-self: center;
+            align-self: flex-end;
+            flex-direction: row;
+        }
+
+
+        #caixaUm {
+            background-color: blue;
+            height: 100%;
+            width: 33.333%;
+            align-self: flex-end;
+            justify-self: start;
+        }
+
+        #caixaDois {
+            background-color: yellow;
+            height: 100%;
+            width: 33.333%;
+            align-self: flex-end;
+            justify-self: center;
+        }
+
+        #caixaTres {
+            background-color: green;
+            height: 100%;
+            width: 33.333%;
+            align-self: end;
+            justify-self: end;
+        }
+
+        #divGrande {
+            height: 100%;
+            width: 100%;
+            background-color: rgb(234, 17, 17);
+            justify-self: center;
+            align-self: center;
+            flex-direction: row;
+        }
+
+        #topo {
+            height: 35%;
+            width: 100%;
+            /* display: flex; */
+            /* justify-self: center;
+            align-self: start;
+            flex-direction: row; */
+            background-color: brown;
+        }
+
+        #divGrandeDois {
+            height: 100%;
+            width: 100%;
+            background-color: rgb(1, 1, 1);
+            justify-self: center;
+            align-self: center;
+            flex-direction: row;
+        }
+
+        #topoDois {
+            height: 35%;
+            width: 100%;
+            /* display: flex; */
+            /* justify-self: center;
+            align-self: start;
+            flex-direction: row; */
+            background-color: rgb(178, 163, 163);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="topo">
+        <div id="divGrande"></div>
+    </div>
+
+    <div id="baixo">
+        <div id="caixaUm"></div>
+        <div id="caixaDois"></div>
+        <div id="caixaTres"></div>
+    </div>
+
+    <div id="topoDois">
+        <div id="divGrandeDois"></div>
+    </div>
+</body>
+
+</html>

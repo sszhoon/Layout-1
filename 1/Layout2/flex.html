@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout 2 - Flex</title>
+
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .container{
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+    }
+
+    .esquerda{
+      width: 30%;
+      background: rgb(255, 122, 228);
+    }
+
+    .direita{
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .topo{
+      height: 50%;
+      background: rgb(164, 40, 198);
+    }
+
+    .baixo{
+      height: 50%;
+      background: rgb(125, 19, 255);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="esquerda"></div>
+
+    <div class="direita">
+      <div class="topo"></div>
+      <div class="baixo"></div>
+    </div>
+  </div>
+</body>
+</html>
